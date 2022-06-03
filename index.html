@@ -8,10 +8,133 @@
     </head>
     <body>
         <header>
-            <h1>
-                <a href="./index.html">Ryan McCarthy</a>
-            </h1>
+            
+            <nav>
+                <ul>
+                    <!-- I want Home to be in top left corner.  Static? -->
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <h1>
+                        <a href="./index.html">Ryan McCarthy</a>
+                    </h1>
+                    <li>
+                        <a href="#cv">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#reachme">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+       
+        <section class="hero">
+           <div> 
+                <div class="profile-pic"><img src="./assets/images/vader-samurai.jpg" alt="Ryan McCarthy" width="300" height="400">
+                    <h1>Hello there!
+                    <p>I'm Ryan.</p>
+                    </h1>
+                    <p>I'm an aspiring web developer with ten years of administrative experience with the Federal Government.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- This will be the gap between hero and profile sections -->
+        <section class="section"></section>
+
+        <!-- This will be the profile section with content cards-->
+        <article class="profile">
+            <section>
+                <div>
+                    <h2>Profile</h2>
+                    <!-- This div will contain the content cards -->
+
+                    <div>
+                        <!-- Background card -->
+                        <div> 
+                            <!-- content img -->
+                            <div>
+                                <img src="./assets/images/colors.jpg" width="200" height="300"/>
+                            </div>
+
+                            <!-- content title "Background" -->
+                            <div><h3>Background</h3>
+                            </div>
+
+                            <!-- content card text -->
+                            <div>I have a certification in Business Data Analysis from Cornell University and I am currently working on a Web Development Coding Bootcamp with Carlenton University.  I have ten years of administrative experience with the Federal Government and have been working at Ford Motor Company's Ottawa Engineering Centre as a hardware jockey and shipping & receiving manager.
+                            </div>
+                        </div>
+
+                        <!-- Skills card -->
+                        <div>
+                            <!-- content img -->
+                            <div>
+                                <img src="./assets/images/goalsjpg.jfif" width="200" height="300"/>
+                            </div>
+
+                            <!-- content title "skills" -->
+                            <div><h3>Skillset</h3>
+
+                            </div>
+
+                            <!-- content card text -->
+                            <div>I possess a keen eye for detail, have a passion for learning, particularly languages, and work well under pressure.  I pride myself on my interpersonal skills and I work well with people from all walks of life.
+
+                            </div>
+                        </div>
+
+                        <!-- goals card-->
+                        <div>
+                            <!-- content img -->
+                            <div>
+                                <img src="./assets/images/skills.jpg" width="200" height="300"/>
+                            </div>
+
+                            <!-- content title "goals" -->
+                            <div>
+                              <h3>Goals</h3>
+
+                            </div>
+
+                            <!-- content card text -->
+                            <div>I am searching for an opportunity as a web developer where I can use my recently obtained skills to bring positive change to a company that I deem a good fit for my values and skillset.
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+        </article>
+
+        <!-- Resume PDF download goes here -->
+        <section id="cv" class="resume">
+            <h3>You can find my resume by clicking here:</h3>
+            <button type="download"><a href="./assets/resume/CV -Ryan_McCarthy PDF.pdf" download><b>Resume</b></a>
+            </button>
+        </section>
+
+        <section id="reachme">
+            <div class="reachme-form">
+                <h3>Reach Out!</h3>
+                <p>Send me a message and I will get back to you as soon as I am able.
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email" name="email" id="email" class="form-input" />
+                        <!-- message box goes here with a submit button -->
+                        <textarea id="message" name="message" placeholder="Message" rows="5" cols="75"></textarea>
+                        <button type="Send">
+                            Send
+                        </button>
+                        </form>
+                    </form>
+                </p>
+            </div>
+        </section>
+
+        <footer>This content brought to you by the creative juices of Ryan McCarthy</footer>
     
     </body>
 </html>

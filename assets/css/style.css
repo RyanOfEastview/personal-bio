@@ -1,0 +1,153 @@
+:root {
+    --primary-color: rgba(238, 11, 11, 0.774);
+    --secondary-color: rgba(76,76,76,1);
+    --joker: rgb(127, 8, 160);
+    --text-color: rgb(245,245,245);
+}
+
+/* body creation */
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header beginning */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-radius: 10px;
+    z-index: 9999;
+  }
+
+  header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  header h1 {
+    color: var(--text-color);
+    justify-content: center;
+  }
+
+  header a {
+      text-decoration: none;
+      color: var(--text-color);
+  }
+
+  header nav {
+      text-decoration: none;
+  }
+
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--text-color);
+    text-shadow: var(--joker);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font: bold;
+    font-size: 1.55vw;
+    text-shadow: var(--joker);
+  }
+
+  header nav ul li a:hover {
+      color: var(--joker);
+  }
+
+
+  header h1 a:hover {
+      color: var(--joker);
+  }
+  
+ .article h2 {
+     margin: auto;
+ }
+
+  .hero {
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2%; 
+  }
+
+  .hero h1 {
+    margin:auto;
+  }
+
+  .hero div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    font-size: 22px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .section {
+      padding:20px;
+  }
+
+  .profile {
+      font-size: 16px;
+  }
+
+  .reachme-form button {
+      color: var(--text-color);
+      background-color: var(--primary-color);
+      border: none;
+      padding: 10px 10px;
+      font-size: 15px;
+      border-radius: 20px;
+  }
+
+  .resume {
+      border: none;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      flex-wrap:wrap;
+  }
+
+  .resume a {
+      text-decoration: none;
+  }
+
+  .resume button {
+      background-color: white;
+      color: black;
+  }
