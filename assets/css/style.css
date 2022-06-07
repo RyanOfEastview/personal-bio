@@ -113,6 +113,11 @@ header {
     text-decoration: none;
   }
 
+  .profile-pic {
+    border: 5px var(--primary-color);
+
+  }
+
  .article h2 {
      margin: auto;
  }
@@ -122,14 +127,6 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 2%;      /* need to change the margin I imagine */
     text-align: center;
-    
-  }
-
-  .hero h1 {
-    
-  }
-
-  .hero div {
     
   }
 
@@ -146,8 +143,8 @@ header {
   }
 
   .profile {
-      font-size: 16px;
-      display: inline;
+      font-size: 20px;
+      text-align: center;
   }
 
   .card {
@@ -158,28 +155,9 @@ header {
     width: 200px;
   }
 
-  .reachme {
-    
-  }
-  .reachme-form  {
-    text-align: center;
-    color: black;
-    background-color: white;
-    border: 2px solid var(--primary-color);
-  }
-  .reachme-form button {
-      color: var(--text-color);
-      background-color: var(--primary-color);
-      border: none;
-      padding: 10px 10px;
-      font-size: 15px;
-      border-radius: 20px;
-  }
-
   .resume {
-    text-align: center;
-      border: none;
-      margin-top: 50px;
+      border-top: 2px solid var(--primary-color);
+      margin-top: 15px;
       margin-bottom: 50px;
       flex-wrap:wrap;
   }
@@ -189,10 +167,53 @@ header {
   }
 
   .resume button {
-      background-color: white;
-      color: black;
+    display: inline;
+    background-color: white;
+    color: black;
   }
 
   .section {
     border-bottom: 1px solid var(--primary-color);
+  }
+
+  .cards {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    margin: 20px;
+    flex: 1;
+    background: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .background {
+    padding: 20px;
+    line-height: 1.3;
+  }
+  
+  .background h3 {
+    font-size: 28px;
+  }
+  
+  .background h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .background p {
+    font-size: 17px;
+  }
+
+  .reachme-form {
+    text-align: center;
   }
