@@ -113,10 +113,7 @@ header {
     text-decoration: none;
   }
 
-  .profile-pic {
-    border: 5px var(--primary-color);
-
-  }
+  
 
  .article h2 {
      margin: auto;
