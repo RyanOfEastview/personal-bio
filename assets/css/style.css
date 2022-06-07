@@ -17,8 +17,7 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px 35px;
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
@@ -28,17 +27,21 @@ header {
     background-position: 80%;
     border-radius: 10px;
     z-index: 9999;
+    
   }
 
   header ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      float: right;
   }
 
   header h1 {
     color: var(--text-color);
-    justify-content: center;
+    width: fit-content;
+    display:inline; 
+  
   }
 
   header a {
@@ -48,6 +51,7 @@ header {
 
   header nav {
       text-decoration: none;
+      display: inline;
   }
 
   header h1 {
@@ -91,10 +95,17 @@ header {
   }
 
   footer {
-    margin: auto;
+    color: white;
+    text-align: center;
     background-color: var(--primary-color);
     font: 20px;
     padding: 30px 20px;
+    text-decoration: none;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--text-color);
   }
   
   hr.div-line {
@@ -109,17 +120,17 @@ header {
   .hero {
     color: var(--text-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2%; 
+    margin-top: 2%;      /* need to change the margin I imagine */
+    text-align: center;
+    
   }
 
   .hero h1 {
-    margin:auto;
+    
   }
 
   .hero div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    
   }
 
   .hero-text {
@@ -136,8 +147,26 @@ header {
 
   .profile {
       font-size: 16px;
+      display: inline;
   }
 
+  .card {
+    display:inline;
+    width: 33%;
+  }
+  .card-text {
+    width: 200px;
+  }
+
+  .reachme {
+    
+  }
+  .reachme-form  {
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+  }
   .reachme-form button {
       color: var(--text-color);
       background-color: var(--primary-color);
@@ -148,6 +177,7 @@ header {
   }
 
   .resume {
+    text-align: center;
       border: none;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -161,4 +191,8 @@ header {
   .resume button {
       background-color: white;
       color: black;
+  }
+
+  .section {
+    border-bottom: 1px solid var(--primary-color);
   }
