@@ -156,6 +156,7 @@ header {
       margin-top: 15px;
       margin-bottom: 50px;
       flex-wrap:wrap;
+      text-align: center;
   }
 
   .resume a {
@@ -163,9 +164,17 @@ header {
   }
 
   .resume button {
-    display: inline;
-    background-color: white;
-    color: black;
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
+  .resume button:hover {
+    background-color: var(--joker);
   }
 
   .section {
@@ -218,6 +227,24 @@ header {
 
   .reachme-form {
     text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: radius 10px;
+  }
+
+  .reachme-form button {
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+
+  }
+
+  .reachme-form button:hover {
+    background-color: var(--joker);
   }
 
   article a:hover {
