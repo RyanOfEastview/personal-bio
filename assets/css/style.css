@@ -173,6 +173,11 @@ header {
     text-decoration: none;
   }
 
+  .resume button a{
+    color: whitesmoke;
+    
+  }
+
   .resume button:hover {
     background-color: var(--joker);
   }
@@ -231,8 +236,13 @@ header {
     flex-wrap: wrap;
     box-sizing: border-box;
     border: radius 10px;
+    
   }
 
+  .reachme-form a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
   .reachme-form button {
     color: whitesmoke;
     background-color: var(--primary-color);
@@ -240,7 +250,7 @@ header {
     padding: 10px 10px;
     font-size: 15px;
     border-radius: 20px;
-
+    
   }
 
   .reachme-form button:hover {
