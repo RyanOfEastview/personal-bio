@@ -175,7 +175,7 @@ header {
 
   .resume button a{
     color: whitesmoke;
-    
+
   }
 
   .resume button:hover {
@@ -260,4 +260,58 @@ header {
   article a:hover {
     color: var(--primary-color);
   }
+
+  /* media query */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .card {
+    flex: 0 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  .card {
+    flex: 0 100%;
+  }
+
+  .reachme-form {
+    text-align: center;
+    order: 3;
+    flex: 0 100%;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+}
 
