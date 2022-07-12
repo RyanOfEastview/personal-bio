@@ -91,7 +91,7 @@ header {
   }
 
   footer {
-    margin: auto;
+    text-align: center;
     background-color: var(--primary-color);
     font: 20px;
     padding: 30px 20px;
@@ -107,19 +107,19 @@ header {
  }
 
   .hero {
+    display: flex;
     color: var(--text-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2%; 
+    margin-top: 2%;      /* need to change the margin I imagine */
   }
 
+  /* do I need these */
   .hero h1 {
-    margin:auto;
+    
   }
 
   .hero div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    
   }
 
   .hero-text {
@@ -138,6 +138,13 @@ header {
       font-size: 16px;
   }
 
+  .card-text {
+    width: 200px;
+  }
+
+  .reachme-form  {
+    text-align: center;
+  }
   .reachme-form button {
       color: var(--text-color);
       background-color: var(--primary-color);
@@ -148,6 +155,7 @@ header {
   }
 
   .resume {
+    text-align: center;
       border: none;
       margin-top: 50px;
       margin-bottom: 50px;
