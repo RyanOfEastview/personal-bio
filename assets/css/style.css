@@ -1,317 +1,340 @@
 :root {
-    --primary-color: rgba(238, 11, 11, 0.774);
-    --secondary-color: rgba(76,76,76,1);
-    --joker: rgb(127, 8, 160);
-    --text-color: rgb(245,245,245);
+  --primary-color: rgba(238, 11, 11, 0.774);
+  --secondary-color: rgba(76,76,76,1);
+  --joker: rgb(127, 8, 160);
+  --text-color: rgb(245,245,245);
 }
 
 /* body creation */
 body {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Header beginning */
 header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px 35px;
-    background-color: var(--primary-color);
-    /* display: flex; */
-    flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    border-radius: 10px;
-    z-index: 9999;
-    
-  }
-
-  header ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      float: right;
-  }
-
-  header h1 {
-    color: var(--text-color);
-    width: fit-content;
-    display:inline; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 35px;
+  background-color: var(--primary-color);
+  /* display: flex; */
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  border-radius: 10px;
+  z-index: 9999;
   
-  }
+}
 
-  header a {
-      text-decoration: none;
-      color: var(--text-color);
-  }
-
-  header nav {
-      text-decoration: none;
-      display: inline;
-  }
-
-  header h1 {
-    font-weight: bold;
+header ul {
+    list-style-type: none;
     margin: 0;
-    font-size: 36px;
-    color: var(--text-color);
-    text-shadow: var(--joker);
-  }
-  
-  header a {
+    padding: 0;
+    float: right;
+}
+
+header h1 {
+  color: var(--text-color);
+  width: fit-content;
+  display:inline; 
+
+}
+
+header a {
     text-decoration: none;
     color: var(--text-color);
-  }
-  
-  header nav {
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font: bold;
-    font-size: 25px;
-    text-shadow: var(--joker);
-  }
+}
 
-  header nav ul li a:hover {
-      color: var(--joker);
-  }
+header nav {
+    text-decoration: none;
+    display: inline;
+}
 
-  header h1 a:hover {
-      color: var(--joker);
-  }
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: var(--text-color);
+  text-shadow: var(--joker);
+}
 
-  footer {
-    color: white;
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font: bold;
+  font-size: 25px;
+  text-shadow: var(--joker);
+}
+
+header nav ul li a:hover {
+    color: var(--joker);
+}
+
+header h1 a:hover {
+    color: var(--joker);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: var(--primary-color);
+  font: 20px;
+  padding: 30px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+hr.div-line {
+  border-top: 5px solid var(--primary-color);
+  text-decoration: none;
+}
+
+.article h2 {
+   margin: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 2%;      /* need to change the margin I imagine */
+  text-align: center;
+  
+}
+
+.hero-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 22px;
+  width: 50%;
+}
+
+.hero-text p {
+  width: ;
+}
+
+.section {
+    padding:20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.card {
+  display:inline;
+  width: 33%;
+}
+
+.card-text {
+  width: 200px;
+}
+
+.resume {
+    border-top: 2px solid var(--primary-color);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    flex-wrap:wrap;
     text-align: center;
-    background-color: var(--primary-color);
-    font: 20px;
-    padding: 30px 20px;
+}
+
+.resume a {
     text-decoration: none;
-    border-radius: 10px;
-  }
+}
+
+.resume button {
+  color: whitesmoke;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.resume button a{
+  color: whitesmoke;
+
+}
+
+.resume button:hover {
+  background-color: var(--joker);
+}
+
+.section {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.cards {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+  margin: 20px;
+  flex: 1;
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.card img {
+  width: 100%;
+}
+
+.group4:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.runbuddy:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.background {
+  padding: 20px;
+  line-height: 1.3;
+}
+
+.background a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.background h3 {
+  font-size: 28px;
+}
+
+.background h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.background p {
+  font-size: 17px;
+}
+
+.reachme-form {
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: radius 10px;
   
-  footer a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
+}
+
+.reachme-form a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.reachme-form button {
+  color: whitesmoke;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 20px;
   
-  hr.div-line {
-    border-top: 5px solid var(--primary-color);
-    text-decoration: none;
-  }
+}
 
- .article h2 {
-     margin: auto;
- }
+.reachme-form button:hover {
+  background-color: var(--joker);
+}
 
-  .hero {
-    color: var(--text-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2%;      /* need to change the margin I imagine */
-    text-align: center;
-    
-  }
+article a:hover {
+  color: var(--primary-color);
+}
 
-  .hero-text {
-    font-size: 22px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .section {
-      padding:20px;
-  }
-
-  .profile {
-      font-size: 20px;
-      text-align: center;
-  }
-
-  .card {
-    display:inline;
-    width: 33%;
-  }
-  .card-text {
-    width: 200px;
-  }
-
-  .resume {
-      border-top: 2px solid var(--primary-color);
-      margin-top: 15px;
-      margin-bottom: 50px;
-      flex-wrap:wrap;
-      text-align: center;
-  }
-
-  .resume a {
-      text-decoration: none;
-  }
-
-  .resume button {
-    color: whitesmoke;
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px 10px;
-    font-size: 15px;
-    border-radius: 20px;
-    text-decoration: none;
-  }
-
-  .resume button a{
-    color: whitesmoke;
-
-  }
-
-  .resume button:hover {
-    background-color: var(--joker);
-  }
-
-  .section {
-    border-bottom: 1px solid var(--primary-color);
-  }
-
-  .cards {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .card {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--text-color);
-  }
-  
-  .card img {
-    width: 100%;
-  }
-  
-  .background {
-    padding: 20px;
-    line-height: 1.3;
-  }
-
-  .background a {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-  
-  .background h3 {
-    font-size: 28px;
-  }
-  
-  .background h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .background p {
-    font-size: 17px;
-  }
-
-  .reachme-form {
-    text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border: radius 10px;
-    
-  }
-
-  .reachme-form a{
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .reachme-form button {
-    color: whitesmoke;
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px 10px;
-    font-size: 15px;
-    border-radius: 20px;
-    
-  }
-
-  .reachme-form button:hover {
-    background-color: var(--joker);
-  }
-
-  article a:hover {
-    color: var(--primary-color);
-  }
-
-  /* media query */
+/* media query */
 
 @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
+header {
+  padding-bottom: 0;
+  justify-content: center;
+  position: relative;
+}
 
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
+header h1 {
+  width: 100%;
+  text-align: center;
+}
 
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
 
-  header nav ul li a {
-    font-size: 20px;
-  }
+header nav ul li a {
+  font-size: 20px;
+}
 
-  .card {
-    flex: 0 70%;
-  }
+.card {
+  flex: 0 70%;
+}
 }
 
 @media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-  }
+section {
+  padding: 30px 15px;
+}
 
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
-  .card {
-    flex: 0 100%;
-  }
-
-  .reachme-form {
-    text-align: center;
-    order: 3;
-    flex: 0 100%;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
+.card {
+  flex: 0 100%;
 }
 
+.reachme-form {
+  text-align: center;
+  order: 3;
+  flex: 0 100%;
+}
+
+.contact-info > * {
+  flex: 0 100%;
+}
+}
